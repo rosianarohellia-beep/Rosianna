@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMK CENTANG JAYA</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{scroll-behavior:smooth}
+.hero{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f');
+background-size:cover;background-position:center;height:100vh;color:white;
+}
+.card:hover{transform:translateY(-5px);transition:.3s;cursor:pointer}
+footer{background:#0d6efd;color:white}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#home">SMK CENTANG JAYA</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#jurusan">Jurusan</a></li>
+<li class="nav-item"><a class="nav-link" href="#ekskul">Ekstrakurikuler</a></li>
+<li class="nav-item"><a class="nav-link fw-bold" href="#ppdb">PPDB</a></li>
+<li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero d-flex align-items-center">
+<div class="container text-center">
+<h1 class="fw-bold display-4">SMK CENTANG JAYA</h1>
+<p class="lead">Sekolah Vokasi Unggul, Terampil, dan Berkarakter</p>
+<a href="#ppdb" class="btn btn-warning btn-lg">Daftar Sekarang</a>
+</div>
+</section>
+
+<!-- JURUSAN -->
+<section id="jurusan" class="py-5 bg-light">
+<div class="container">
+<h2 class="text-center fw-bold mb-4">Program Keahlian</h2>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#tkjModal">
+<div class="card-body text-center">
+<h5>TKJ</h5><p>Klik untuk detail</p>
+</div></div></div>
+
+<div class="col-md-4">
+<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#rplModal">
+<div class="card-body text-center">
+<h5>RPL</h5><p>Klik untuk detail</p>
+</div></div></div>
+
+<div class="col-md-4">
+<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#mmModal">
+<div class="card-body text-center">
+<h5>Multimedia</h5><p>Klik untuk detail</p>
+</div></div></div>
+
+</div>
+</div>
+</section>
+
+<!-- MODAL JURUSAN -->
+<div class="modal fade" id="tkjModal"><div class="modal-dialog modal-lg"><div class="modal-content">
+<div class="modal-header"><h5>Teknik Komputer & Jaringan</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body">
+<ul><li>Instalasi jaringan</li><li>Mikrotik</li><li>Server</li><li>Troubleshooting</li></ul>
+<p><b>Peluang:</b> IT Support, Network Admin</p>
+<a href="#ppdb" class="btn btn-primary" data-bs-dismiss="modal">Pilih Jurusan Ini</a>
+</div></div></div></div>
+
+<div class="modal fade" id="rplModal"><div class="modal-dialog modal-lg"><div class="modal-content">
+<div class="modal-header"><h5>Rekayasa Perangkat Lunak</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body">
+<ul><li>HTML CSS JS</li><li>Aplikasi</li><li>Database</li></ul>
+<p><b>Peluang:</b> Programmer, Web Dev</p>
+<a href="#ppdb" class="btn btn-primary" data-bs-dismiss="modal">Pilih Jurusan Ini</a>
+</div></div></div></div>
+
+<div class="modal fade" id="mmModal"><div class="modal-dialog modal-lg"><div class="modal-content">
+<div class="modal-header"><h5>Multimedia</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body">
+<ul><li>Desain grafis</li><li>Editing video</li><li>Animasi</li></ul>
+<p><b>Peluang:</b> Desainer, Content Creator</p>
+<a href="#ppdb" class="btn btn-primary" data-bs-dismiss="modal">Pilih Jurusan Ini</a>
+</div></div></div></div>
+
+<!-- EKSTRAKURIKULER -->
+<section id="ekskul" class="py-5">
+<div class="container">
+<h2 class="text-center fw-bold mb-4">Ekstrakurikuler</h2>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card text-center shadow-sm" data-bs-toggle="modal" data-bs-target="#tariModal">
+<div class="card-body"><h5>Tari</h5><p>Klik untuk detail</p></div>
+</div></div>
+
+<div class="col-md-4">
+<div class="card text-center shadow-sm" data-bs-toggle="modal" data-bs-target="#renangModal">
+<div class="card-body"><h5>Berenang</h5><p>Klik untuk detail</p></div>
+</div></div>
+
+<div class="col-md-4">
+<div class="card text-center shadow-sm" data-bs-toggle="modal" data-bs-target="#badmintonModal">
+<div class="card-body"><h5>Badminton</h5><p>Klik untuk detail</p></div>
+</div></div>
+
+</div>
+</div>
+</section>
+
+<!-- MODAL EKSKUL -->
+<div class="modal fade" id="tariModal"><div class="modal-dialog"><div class="modal-content">
+<div class="modal-header"><h5>Ekskul Tari</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body"><p>Tari tradisional & modern, tampil di acara sekolah dan lomba.</p></div>
+</div></div></div>
+
+<div class="modal fade" id="renangModal"><div class="modal-dialog"><div class="modal-content">
+<div class="modal-header"><h5>Ekskul Berenang</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body"><p>Latihan teknik renang, stamina, dan keselamatan air.</p></div>
+</div></div></div>
+
+<div class="modal fade" id="badmintonModal"><div class="modal-dialog"><div class="modal-content">
+<div class="modal-header"><h5>Ekskul Badminton</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body"><p>Latihan teknik, pertandingan, dan persiapan lomba.</p></div>
+</div></div></div>
+
+<!-- PPDB -->
+<section id="ppdb" class="py-5 bg-light">
+<div class="container">
+<h2 class="text-center fw-bold mb-4">PPDB Online</h2>
+<div class="row justify-content-center">
+<div class="col-md-6">
+<form class="card p-4 shadow-sm">
+<input class="form-control mb-3" placeholder="Nama Lengkap">
+<input class="form-control mb-3" placeholder="Asal Sekolah">
+<select class="form-select mb-3">
+<option>Pilih Jurusan</option>
+<option>TKJ</option>
+<option>RPL</option>
+<option>Multimedia</option>
+</select>
+<button class="btn btn-success w-100">Kirim Pendaftaran</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="py-5 text-center">
+<div class="container">
+<h2 class="fw-bold">Kontak</h2>
+<p>Jl. Pendidikan Raya No.88, Bogor</p>
+<p>info@smkcentangjaya.sch.id | 0812-3456-7890</p>
+</div>
+</section>
+
+<footer class="text-center py-3">
+<p class="mb-0">© 2026 SMK CENTANG JAYA</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
